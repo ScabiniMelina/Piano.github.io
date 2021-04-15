@@ -1,0 +1,36 @@
+:root{
+    --blackColor:#000000;
+    --whiteColor:#fff;
+}
+
+body{
+    background-color: crimson;
+}
+
+.contentPiano{
+    border: 5px solid var(--blackColor);
+    position: absolute;
+    width:calc(50vh * 2);
+    height: 50vh;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contentPiano_whiteNote{
+    border: 1px solid var(--blackColor);
+    background-color:var(--whiteColor);
+    height: 100%;
+    width: 6%;
+}
+
+.contentPiano_blackNote{
+    background-color:var(--blackColor);
+    height: 65%;
+    width: 50%;
+    transform: translateX(150%);
+}

@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: crimson;
+    background-color: #dc143c;
 }
 
 .contentPiano{
@@ -25,7 +25,7 @@ body{
     border: 1px solid var(--blackColor);
     background-color:var(--whiteColor);
     height: 100%;
-    width: 6%;
+    width: 7%;
 }
 
 .contentPiano_blackNote{

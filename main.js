@@ -2,7 +2,6 @@ const synth = new Tone.PolySynth(Tone.Synth).toDestination(); //Devuelve un obje
 let piano = document.getElementById("piano");
 let notes = ["C","D","E","F","G","A","B"];
 let html = "";
-let notesElement = document.querySelectorAll('.note');
 let keys =['Tab','1','q','2','w','e','4','r','5','t','6','y','u','8','i','9','o','p',"'",'Dead','¿','+','Backspace','Enter'];
 
 for (let octave = 4; octave < 6; octave++) {
@@ -15,6 +14,7 @@ for (let octave = 4; octave < 6; octave++) {
         html += '</div>';
     }
 }
+let notesElement = document.querySelectorAll('.note');
 piano.innerHTML = html;
 
 document.addEventListener("keydown",(e)=>{

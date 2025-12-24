@@ -7,7 +7,7 @@ let keys = ['Tab', '1', 'q', '2', 'w', 'e', '4', 'r', '5', 't', '6', 'y', 'u', '
 async function createNotes() {
     for (let octave = 4; octave < 6; octave++) {
         for (let i in notes) {
-            html += `<div class="contentPiano_whiteNote note" data-code='${notes[i]}#${octave}'>`;
+            html += `<div class="contentPiano_whiteNote note" data-code='${notes[i]}${octave}'>`;
             console.log(notes[i]);
             if (notes[i] != 'E' && notes[i] != 'B') {
                 html += ` <div class='contentPiano_blackNote note' data-code='${notes[i]}#${octave}'></div>`;
@@ -42,4 +42,5 @@ createNotes().then(() => {
             }
         });
     })
+
 })

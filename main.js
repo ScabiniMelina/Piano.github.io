@@ -5,7 +5,7 @@ let html = "";
 let keys = ['Tab', '1', 'q', '2', 'w', 'e', '4', 'r', '5', 't', '6', 'y', 'u', '8', 'i', '9', 'o', 'p', "'", 'Dead', '¿', '+', 'Backspace', 'Enter'];
 
 async function createNotes() {
-    for (let octave = 4; octave < 6; octave++) {
+    for (let octave = 4; octave < 8; octave++) {
         for (let i in notes) {
             html += `<div class="contentPiano_whiteNote note" data-code='${notes[i]}${octave}'>`;
             console.log(notes[i]);
@@ -44,3 +44,4 @@ createNotes().then(() => {
     })
 
 })
+
